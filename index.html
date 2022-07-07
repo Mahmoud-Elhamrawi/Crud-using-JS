@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>CRUD SYSTEM</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Mahmoud Elhamrawi">
+    <meta name="description" content="CRUD System">
+    <meta name="keywords" content="CRUD , create , retrive , update,delete">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+
+<section class="dataFromUser">
+    <div class="container">
+     <h2 class="heading">Registeration System</h2>
+     <div id="myAlert" class="w-75 alert alert-danger text-center d-none">plz. Enter Values In Inputs</div>
+            <div class="form-group">
+                <label for="inputName">user Name : </label>
+                <input type="text" class="form-control" id="inputName">
+                <div class="alert alert-danger d-none w-50 text-center" id="danger">
+                    <h6>value must be strat with capital charter then from 3 to 5 lowerchart</h3>
+                </div>
+            </div>
+            <div class="form-group">
+            <label for="inputEmail">user Email : </label>
+            <input type="email" class="form-control" id="inputEmail">
+           
+           </div>
+           <div class="form-group">
+            <label for="inputPhone">user Phone : </label>
+            <input type="number" class="form-control" id="inputPhone">
+            <div class="alert alert-danger d-none w-50 text-center" id="danger-phone">
+                <h6>value must be strat 01  up to 11 numbers</h3>
+            </div>
+           </div>
+           <div class="form-group">
+            <label for="inputFaculty">Faculty : </label>
+            <input type="text" class="form-control" id="inputFaculty">
+           </div>
+           <div class="form-group">
+            <label for="inputMajor">Major : </label>
+            <input type="text" class="form-control" id="inputMajor">
+           </div>
+ 
+           <button id="myBtn" class="myBtn btn btn-info d-block m-auto aw-25 py-3"> <span>Add</span></button>
+            <input  onkeyup="search()" class="form-control w-50" placeholder="search for name or major"  id="inputSearch">
+        </div>
+</section>
+
+<section class="dataToUesr">
+<div class="container">
+    <table class="table my-5">
+        <thead>
+            <th>Index</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Faculty</th>
+            <th>Major</th>
+           <th>UpDate</th>
+           <th>Delete</th>
+         </thead>
+        <tbody id="myRow">
+
+        </tbody>     
+      
+
+        </table>
+</div>
+
+ 
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+        <script src="js/jquery-3.5.1.slim.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/scrpt.js"></script>
+    </body>
+</html>
+
